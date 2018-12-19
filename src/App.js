@@ -41,7 +41,7 @@ class App extends Component {
       <div className="App">
         <Form addList={this.addList}/>
         <List status={this.state.status} deleteList={this.deleteList} data={this.state.data} checkListState={this.checkListState}/>
-        <Foot setStatus={this.setStatus}/>
+        <Foot setStatus={this.setStatus} currentStatus={this.state.status} show={!!this.state.data.length}/>
       </div>
     );
   }
